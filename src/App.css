@@ -1,0 +1,186 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center; /* по горизонтали */
+  align-items: center;    /* по вертикали */
+  min-height: 100vh;      /* вся высота экрана */
+  margin: 0;
+}
+
+.profile {
+  width: 300px;
+  margin: 10px auto 0;
+  background-color: #fff;
+  border: 1px solid #e4e9f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-bottom: 60px;
+}
+
+.profile__img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.profile__username {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px 0 5px;
+}
+
+.profile__tag,
+.profile__location {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.profile__location {
+  padding-bottom: 25px;
+}
+
+.profile__list {
+  display: flex;
+  border-top: 1px solid #e4e9f0;
+  background-color: #f7f9fb;
+  padding: 0;
+  list-style: none;
+  margin: 0; 
+}
+
+.profile__item {
+  flex: 1;
+  padding: 12px 0;
+  border-right: 1px solid #e4e9f0;
+}
+
+.profile__item:last-child {
+  border-right: none;
+}
+
+.profile__text {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.profile__num {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.statistics {
+  display: inline-block;
+  margin: 40px auto;
+  background-color: #fff;
+  border: 1px solid #e4e9f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.statistics__title {
+  width: 400px;          /* фиксированная ширина как у таблицы */
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 0;
+  margin: 0;
+  border-bottom: 1px solid #e4e9f0;
+  background-color: #f7f9fb;
+}
+
+.statistics__list {
+  display: grid;
+  grid-template-columns: repeat(4, 100px); /* 4 ячейки по 100px */
+  grid-auto-rows: 80px;                     /* фиксированная высота */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.statistics__item {
+  width: 100px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.statistics__item:nth-child(1) {
+  background-color: #3498db;
+}
+
+.statistics__item:nth-child(2) {
+  background-color: #9b59b6;
+}
+
+.statistics__item:nth-child(3) {
+  background-color: #e74c3c;
+}
+
+.statistics__item:nth-child(4) {
+  background-color: #1abc9c;
+}
+
+.statistics__label {
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+
+.statistics__num {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+
