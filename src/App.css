@@ -39,9 +39,9 @@
 
 body {
   display: flex;
-  justify-content: center; /* по горизонтали */
-  align-items: center;    /* по вертикали */
-  min-height: 100vh;      /* вся высота экрана */
+  justify-content: center;
+  align-items: center;   
+  min-height: 100vh;     
   margin: 0;
 }
 
@@ -126,8 +126,7 @@ body {
 }
 
 .statistics__title {
-  width: 400px;          /* фиксированная ширина как у таблицы */
-  text-align: center;
+  width: 400px;          
   font-size: 18px;
   font-weight: 600;
   padding: 15px 0;
@@ -138,8 +137,8 @@ body {
 
 .statistics__list {
   display: grid;
-  grid-template-columns: repeat(4, 100px); /* 4 ячейки по 100px */
-  grid-auto-rows: 80px;                     /* фиксированная высота */
+  grid-template-columns: repeat(4, 100px); 
+  grid-auto-rows: 80px;                    
   margin: 0;
   padding: 0;
   list-style: none;
@@ -171,6 +170,11 @@ body {
   background-color: #1abc9c;
 }
 
+.statistics__item:nth-child(5) {
+  background-color: #857189;
+}
+
+
 .statistics__label {
   font-size: 14px;
   margin: 0 0 4px;
@@ -181,6 +185,113 @@ body {
   font-weight: 600;
   margin: 0;
 }
+
+
+.friends__list {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.friends__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.friends__item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.status {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.status.online {
+  background-color: #4caf50;
+}
+
+.status.offline {
+  background-color: #f44336;
+}
+
+.friends__item img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10%;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.friends__name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.transaction__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden; 
+}
+
+.transaction_head {
+  background-color: #00bcd4; 
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.transaction__caption {
+  padding: 12px;
+}
+
+.transaction__body .transaction__line {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.transaction__line:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.transaction__line:hover {
+  background-color: #f1f1f1; 
+}
+
+.transaction__type,
+.transaction__amount,
+.transaction__currency {
+  padding: 12px;
+  color: #333;
+}
+
+.transaction__title {
+  font-size: 20px;
+  padding-top: 70px;
+  padding-bottom: 10px;
+}
+
+
+
 
 
 

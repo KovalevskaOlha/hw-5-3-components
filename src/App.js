@@ -4,7 +4,10 @@ import { Profile } from './components/Profile/Profile';
 import { StatisticsTitle } from './components/Statistics/StatisticsTitle';
 import { ProfileTitle } from './components/Profile/ProfileTitle';
 import { StatisticsList } from './components/Statistics/StatisticsList';
-
+import { FriendsTitle } from './components/FriendList/FriendTitle';
+import { FriendsList } from './components/FriendList/FriendList';
+import { TransactionHistoryTable } from './components/TransactionHistory/TransactionHistoryTable';
+import { TransactionTitle } from './components/TransactionHistory/TransactionTitle';
 
 function App() {
   return (
@@ -14,6 +17,10 @@ function App() {
       <Profile {...user} />
       <StatisticsTitle />
       <StatisticsList />
+      <FriendsTitle />
+      <FriendsList />
+      <TransactionTitle />
+      <TransactionHistoryTable />
       </main>
     </div>
   );
